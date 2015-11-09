@@ -1,0 +1,158 @@
+/* CSS file for portfolio site */
+
+
+/* General styles */
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    padding-top: 140px;
+}
+
+img {
+    max-width: 100%;
+    margin: auto;
+}
+
+.text-thin {
+    font-weight: 300;
+}
+
+.text-light {
+    color: #bcbbbb;
+}
+
+.text-thick {
+    font-weight: 400;
+}
+
+
+/* Header */
+.site-header {
+    background: #fff url(../img/monitor-768_1x.jpg) no-repeat;
+    /* note there is image-set prefixed functionality which does not pass CSS validator (even though it works)
+    hence why it is commented out -> background-image: -webkit-image-set(url(../img/monitor-768_1x.jpg) 1x, url(../img/monitor-1200_2x.jpg) 2x); */
+    background-size: cover;
+    color: #bcbbbb;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+.header-content {
+    max-width: 1280px;
+}
+
+.title-large {
+    font-size: 40px;
+}
+
+.title-brand {
+    padding: 0 15px;
+}
+
+.subtitle {
+    font-size: 15px;
+}
+
+
+/* Navigation */
+.header-nav {
+    padding-bottom: 10px;
+}
+
+.header-nav > li {
+    display: inline-block;
+}
+
+.header-nav > li + li {
+    margin-left: 20px;
+}
+
+.header-nav > li > a {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    /* IE8 proofing */
+    color: rgba(255, 255, 255, .75);
+    border-bottom: 2px solid transparent;
+}
+
+.header-nav > li > a:hover,
+.header-nav > li > a:focus {
+    background-color: transparent;
+    border-bottom-color: #a9a9a9;
+    border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.header-nav > .active > a,
+.header-nav > .active > a:hover,
+.header-nav > .active > a:focus {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+.navbar-toggle {
+    padding-top: 20px;
+}
+
+.icon-bar {
+    background-color: #fff;
+}
+
+/* Header content at tablet size and above*/
+@media screen and (min-width: 768px) {
+    .title-brand {
+        padding: 15px 15px;
+        line-height: 20px;
+        float: left;
+    }
+
+    .title-large {
+        font-size: 50px;
+    }
+
+    .subtitle {
+        font-size: inherit;
+    }
+
+    .header-nav {
+        float: right;
+        margin-top: 15px;
+        padding: 16px 3%;
+    }
+}
+
+
+/* Main content */
+.main {
+    max-width: 1280px;
+}
+
+.logo-img {
+    max-width: 100px;
+    padding-top: 10px;
+}
+
+
+/* Horizontal rule styling: Gradient transparent - color - transparent */
+.hr-style {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.primary-banner {
+    padding: 0;
+}
+
+.featured {
+    text-align: center;
+}
+
+
+/* Footer */
+.footer {
+    padding: 10px;
+}
